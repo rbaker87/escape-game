@@ -1,0 +1,22 @@
+{
+  "name": "Escape Game",
+  "short_name": "Escape Game",
+  "description": "Escape Game - A Godot game",
+  "start_url": "./escape-game.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#242424",
+  "theme_color": "#242424",
+  "icons": [
+    {
+      "src": "escape-game.icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "escape-game.apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
