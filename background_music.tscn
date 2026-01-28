@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpirvgp0mpbx2"]
+
+[ext_resource type="Script" uid="uid://fcnue18tniwo" path="res://background_music.gd" id="1_music"]
+[ext_resource type="AudioStream" uid="uid://5qvsbu6lu5ng" path="res://sounds/the-magic-tree.mp3" id="2_music"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer"]
+stream = ExtResource("2_music")
+script = ExtResource("1_music")
+volume_percent = 10

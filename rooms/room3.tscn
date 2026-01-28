@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://ba3873q471xro"]
+
+[ext_resource type="Script" uid="uid://cjgqqubwe1wla" path="res://rooms/room_base.gd" id="1_2gnyu"]
+[ext_resource type="Resource" uid="uid://b0qhk01gimi5y" path="res://dialogue/room3.dialogue" id="2_wne52"]
+[ext_resource type="Texture2D" uid="uid://b468a4tqqr8xu" path="res://backgrounds/bg3.jpg" id="3_2gnyu"]
+
+[node name="Room3" type="Control" unique_id=254205098]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2gnyu")
+dialogue_resource = ExtResource("2_wne52")
+next_scene_path = "res://rooms/room4.tscn"
+
+[node name="Background" type="TextureRect" parent="." unique_id=1380219866]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_2gnyu")
+expand_mode = 1
+
+[node name="HiddenButton" type="Button" parent="." unique_id=1080819386]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 441.0
+offset_top = 605.0
+offset_right = 519.0
+offset_bottom = 672.0
+
+[connection signal="pressed" from="HiddenButton" to="." method="_on_test_button_pressed"]

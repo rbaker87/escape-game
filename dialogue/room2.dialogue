@@ -1,0 +1,16 @@
+~ start
+~ clues
+if Autoloads.clue_count == 1:
+	I can take you anywhere. Can you find me?
+if Autoloads.clue_count == 2:
+	I have 106 pieces and a hard exterior. Can you find me?
+if Autoloads.clue_count == 3:
+	I have a beginning, a middle, and... the end! Can you find me?
+=> END
+~ fail
+% Try again
+% That's not it
+% Look again
+% Retry
+% That's wrong
+=> clues

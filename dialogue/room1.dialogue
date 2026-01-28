@@ -1,0 +1,17 @@
+~ start
+Use the clues to find the item and click on the item to move to the next room.
+~ clues
+if Autoloads.clue_count == 1:
+	I can be big or small. Can you find me?
+if Autoloads.clue_count == 2:
+	I can be corded or wireless. Can you find me?
+if Autoloads.clue_count == 3:
+	I am very useful in getting words across. Can you find me?
+=> END
+~ fail
+% Try again
+% That's not it
+% Look again
+% Retry
+% That's wrong
+=> clues
